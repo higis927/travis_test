@@ -74,6 +74,7 @@ _VALID_PLUGIN_RE = re.compile(r'^[A-Za-z0-9_.-]+$')
 def tensor_size_guidance_from_flags(flags):
   """Apply user per-summary size guidance overrides."""
 
+  print("Amy Sun")
   tensor_size_guidance = dict(DEFAULT_TENSOR_SIZE_GUIDANCE)
   if not flags or not flags.samples_per_plugin:
     return tensor_size_guidance
